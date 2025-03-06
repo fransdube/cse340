@@ -6,6 +6,7 @@
  * Require Statements
  *************************/
 const express = require("express")
+const port = process.env.PORT || 5500;
 const expressLayouts = require("express-ejs-layouts")
 const env = require("dotenv").config()
 const app = express()
@@ -34,7 +35,7 @@ app.get("/", function(req, res) {
  * Local Server Information
  * Values from .env (environment) file
  *************************/
-const port = process.env.PORT
+const PORT = process.env.PORT
 const host = process.env.HOST
 
 /* ***********************
